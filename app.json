@@ -53,6 +53,10 @@
           "value": "False",
           "required": false
       },
+       "HAS_SSL": {
+          "description": "True or False",
+         "value": "True"
+      },
       "BIND_ADRESS": {
           "description": "Read the readme for more info about this var",
           "required": false
