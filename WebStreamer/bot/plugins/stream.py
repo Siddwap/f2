@@ -31,6 +31,6 @@ async def media_receive_handler(_, m: Message):
     await m.reply_text(
         text="`{}`".format(stream_link),
         quote=True,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Open', url=stream_link)]])
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Watch online', url=watch_link)]])
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton('Watch Online', url=watch_link)]])
+       
     )
