@@ -1,18 +1,13 @@
-FROM debian:latest
-RUN apt update && apt upgrade -y
+FROM python:3.9
 
-RUN apt install git curl python3-pip ffmpeg -y
+WORKDIR /app
 
-RUN pip3 install -U pip
+COPY requirements.txt /app/
 
-RUN cd /
+RUN pip3 install -r requirements.txt
 
-RUN git clone https://github.com/Siddwap/File2linkRailway
+COPY . /app
 
-RUN cd File2linkRailway
+#set a default command
 
-WORKDIR /File2linkRailway
-
-RUN pip3 install -U -r requirements.txt
-
-CMD python3 -m WebStreamer
+CMD python3 main.py
