@@ -12,7 +12,7 @@ services:
       
       - APP_NAME=${APP_NAME}
 
-      - APP_ID=${APP_ID}
+      - API_ID=${API_ID}
 
       - API_HASH=${API_HASH}
 
