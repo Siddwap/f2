@@ -8,14 +8,18 @@ services:
 
     environment:
 
-      - TG_BOT_TOKEN=${TG_BOT_TOKEN}
+      - BOT_TOKEN=${BOT_TOKEN}
+      
+      - APP_NAME=${APP_NAME}
 
       - APP_ID=${APP_ID}
 
       - API_HASH=${API_HASH}
 
-      - AUTH_USERS=${AUTH_USERS}
+      - BIN_CHANNEL=${BIN_CHANNEL} 
 
-      - TG_USER_SESSION=${TG_USER_SESSION}
+      - ENV=${ENV} 
 
-      - DB_URI=${DB_URI}
+      - HAS_SSL=${HAS_SSL} 
+      
+      - NO_PORT=${NO_PORT}
