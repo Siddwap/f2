@@ -17,6 +17,8 @@ services:
       - API_HASH=${API_HASH}
 
       - BIN_CHANNEL=${BIN_CHANNEL} 
+      
+      - SESSION_NAME=${SESSION_NAME}
 
       - ENV=${ENV} 
 
